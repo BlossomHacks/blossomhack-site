@@ -3,10 +3,10 @@ import { createRoot } from "react-dom/client";
 import "./main.css";
 import App from "./components/App/App";
 import SponsorshipApp from "./components/App/Sponsorship";
-import { createHashRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Error from "./components/Error/Error";
 
-const router = createHashRouter([
+const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
